@@ -1,5 +1,5 @@
 def load_input():
-    with open("c:/Users/lucam/OneDrive/Desktop/advent_of_code/tor_3/input.txt", "r") as f:
+    with open("c:/Users/lucam/OneDrive/Desktop/advent_of_code/adventofcode/tor_3/input.txt", "r") as f:
         return f.read().strip()
 
 def part1(input):

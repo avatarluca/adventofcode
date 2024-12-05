@@ -1,5 +1,5 @@
 def load_input():
-    with open("c:/Users/lucam/OneDrive/Desktop/advent_of_code/tor_4/input.txt", "r") as f:
+    with open("c:/Users/lucam/OneDrive/Desktop/advent_of_code/adventofcode/tor_4/input.txt", "r") as f:
         return f.read().strip()
 
 def part1(input):
@@ -8,9 +8,9 @@ def part1(input):
     # horizontal
     for line in input.split("\n"):
         for i in range(len(line) - 3):
-            if line[i:i+4] == "XMAS":
+            if line[i:i+3] == "XMAS":
                 count += 1
-            elif line[i:i+4] == "SAMX":
+            elif line[i:i+3] == "SAMX":
                 count += 1
 
     # vertikale   
