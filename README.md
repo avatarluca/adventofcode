@@ -1,2 +1,3 @@
 # adventofcode
-quick code to write not nice
+
+(About Advent of Code)[https://adventofcode.com/2024/about]
