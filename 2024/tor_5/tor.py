@@ -71,6 +71,7 @@ def part2(input):
                     valid = False
                     break
         if not valid:
+            """
             for k in range(len(update_nums)):
                 for left, right in splitted_rules:
                     if left in update_nums and right in update_nums:
@@ -79,9 +80,30 @@ def part2(input):
 
                         if left_i > right_i:
                             update_nums[left_i], update_nums[right_i] = update_nums[right_i], update_nums[left_i]
+            """
+            # REVISIT
+            # Chline denkfehler gha (het aber lustigerwis trotzdem funktioniert)
+            # Idee: Es git kei garantie wenn me swapped das denn die bereits verwendete regle no stimmet
+            # Drum hani eifach welle durch updatenums dureloope bis es halt nümme swapped (aber das han ich irgendwie komisch gmacht)
+            # Für das brüchtemer en while und höret denn erst uf wenn kei swaps meh gmacht wird (also en art bruteforce)
+            # Funktioniert nur wenns kei zyklischi A | B und B | A rules git (bzw. au indirekt mit A | B, B | C und C | A) sondern DAG.
+            # Denn wers unenscheidbar. 
+            fertig = False
+            while not fertig:
+                fertig = True
+
+                for left, right in splitted_rules:
+                    if left in update_nums and right in update_nums:
+                        left_i = update_nums.index(left)
+                        right_i = update_nums.index(right)
+
+                        if left_i > right_i:
+                            update_nums[left_i], update_nums[right_i] = update_nums[right_i], update_nums[left_i]
+                            fertig = False
     
             count += int(update_nums[len(update_nums) // 2])
 
+            # Alternativ chamer en graph us de regle mache und denn topologisch sortiere (um e fixi reihefolg zbecho)
     return count 
 
 
