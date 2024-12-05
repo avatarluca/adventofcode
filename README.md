@@ -1,3 +1,3 @@
-# adventofcode
+# Advent of Code
 
-[About Advent of Code](https://adventofcode.com/2024/about)
+[About Advent of Code 24](https://adventofcode.com/2024/about)
