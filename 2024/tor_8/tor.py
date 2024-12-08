@@ -28,22 +28,6 @@ def part1(input):
                     unique_antinodes.add((x3, y3))
                 if 0 <= x4 < len(lines[0]) and 0 <= y4 < len(lines):
                     unique_antinodes.add((x4, y4))
-    """
-    # für debug
-    width = len(lines[0])
-    height = len(lines)
-
-    grid = [["." for _ in range(width)] for _ in range(height)]
-    for char, positions in antenna_maps.items():
-        for x, y in positions:
-            grid[y][x] = char
-
-    for x, y in unique_antinodes:
-        grid[y][x] = "#"
-
-    for row in grid:
-        print("".join(row))
-    """
 
     return len(unique_antinodes)
 
@@ -69,22 +53,6 @@ def part2(input):
                     for x, char in enumerate(line):
                         if (x - x1) * dy == (y - y1) * dx: # verglicht dstigig
                            unique_antinodes.add((x, y))
-    """
-    # für debug
-    width = len(lines[0])
-    height = len(lines)
-
-    grid = [["." for _ in range(width)] for _ in range(height)]
-    for char, positions in antenna_maps.items():
-        for x, y in positions:
-            grid[y][x] = char
-
-    for x, y in unique_antinodes:
-        grid[y][x] = "#"
-
-    for row in grid:
-        print("".join(row))
-    """
     
     return len(unique_antinodes)
 
