@@ -62,7 +62,7 @@ def part2(input):
         visited_paths = set()
 
         while stack:
-            (x, y), path = stack.pop() # miteme stack glöst: Speicheret immer die höchst trail pos und pfad det ane (vo jedem punkt denn i alli richtige etc.)
+            (x, y), path = stack.pop() # miteme stack glöst: Speicheret immer die höchst trail pos und pfad det ane (vo jedem punkt denn i alli richtige etc.). Gaht au mit queue, denn wers halt breiti und nöd tüfisuechi.
             current_height = trails[x][y]
             new_path = path + [(x, y)]
 
