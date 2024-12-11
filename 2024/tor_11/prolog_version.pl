@@ -48,3 +48,4 @@ count(Stones, Blinks, Count) :-
     sum_list(Counts, Count).
 
 % ?- count([64599-1, 31-1, 674832-1, 2659361-1, 1-1, 0-1, 8867-1, 321-1], 25, Count) % Stone - Count Paar
+% Count = 199986
