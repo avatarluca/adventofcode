@@ -26,3 +26,9 @@
 📅 Day 10: [Problem](https://adventofcode.com/2024/day/10), [Solution](2024/tor_10/tor.py)
 
 📅 Day 11: [Problem](https://adventofcode.com/2024/day/11), [Solution](2024/tor_11/tor.py)
+
+📅 Day 12: [Problem](https://adventofcode.com/2024/day/12), [Solution](2024/tor_12/tor.py)
+
+📅 Day 13: [Problem](https://adventofcode.com/2024/day/13), [Solution](2024/tor_13/tor.py)
+
+📅 Day 14: [Problem](https://adventofcode.com/2024/day/14), [Solution](2024/tor_14/tor.py)
