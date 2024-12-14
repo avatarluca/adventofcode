@@ -63,6 +63,20 @@ def part2(input):
     b = (px - ax * a) / bx
     """
 
+    """
+    No usführlich lut notize:
+    ax * a + bx * b = px
+    bx * b = px - ax * a
+    b = (px - ax * a) / bx
+
+    ay * a + by * ((px - ax * a) / bx) = py
+    ay * a + (by * px - by * ax * a) / bx = py
+    bx * ay * a + by * px - by * ax * a = py * bx
+    bx * ay * a - by * ax * a = py * bx - by * px
+    a * (bx * ay - by * ax) = py * bx - by * px
+    a = (py * bx - by * px) / (bx * ay - by * ax)
+    """
+
     total_cost = 0  
     for i, config in enumerate(configurations):
         ax, ay = config["A"]
