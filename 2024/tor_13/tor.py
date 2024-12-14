@@ -58,10 +58,8 @@ def part2(input):
     Mathematisch:
     ax * a + bx * b = px
     ay * a + by * b = py
-    """
-
-    """
-    No usführlich lut notize:
+    
+    Usführlich lut notize:
     ax * a + bx * b = px
     bx * b = px - ax * a
     b = (px - ax * a) / bx
