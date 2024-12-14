@@ -58,9 +58,6 @@ def part2(input):
     Mathematisch:
     ax * a + bx * b = px
     ay * a + by * b = py
-
-    a = (px * by - py * bx) / (ax * by - ay * bx)
-    b = (px - ax * a) / bx
     """
 
     """
@@ -83,15 +80,14 @@ def part2(input):
         bx, by = config["B"]
         px, py = config["P"]
 
-        a = (px * by - py * bx) / (ax * by - ay * bx)
+        a = (py * bx - by * px) / (bx * ay - by * ax)
         b = (px - ax * a) / bx
 
-        cost = 3 * a + b
-
         if a.is_integer() and b.is_integer(): # nur wennd pushingazahl ganzzahlig sind sust kei lösig
+            cost = 3 * a + b
             total_cost += int(cost)
 
-        # print(f'Maschine {i+1} het min cost {cost}')
+            # print(f'Maschine {i+1} het min cost {cost}')
 
     return total_cost
 
